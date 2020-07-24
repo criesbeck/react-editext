@@ -348,7 +348,6 @@ var EdiText = /*#__PURE__*/function (_Component) {
           cancelButtonClassName = _this$props6.cancelButtonClassName,
           editContainerClassName = _this$props6.editContainerClassName,
           viewContainerClassName = _this$props6.viewContainerClassName,
-          modifyViewContent = _this$props6.modifyViewContent,
           cancelButtonContent = _this$props6.cancelButtonContent,
           onValidationFail = _this$props6.onValidationFail,
           validationMessage = _this$props6.validationMessage,
@@ -397,6 +396,7 @@ var EdiText = /*#__PURE__*/function (_Component) {
     _defineProperty(_assertThisInitialized(_this), "_renderViewMode", function () {
       var _this$props7 = _this.props,
           viewProps = _this$props7.viewProps,
+          modifyViewContent = _this$props7.modifyViewContent,
           editButtonClassName = _this$props7.editButtonClassName,
           editButtonContent = _this$props7.editButtonContent,
           viewContainerClassName = _this$props7.viewContainerClassName,

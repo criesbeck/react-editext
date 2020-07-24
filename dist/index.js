@@ -348,6 +348,7 @@ var EdiText = /*#__PURE__*/function (_Component) {
           cancelButtonClassName = _this$props6.cancelButtonClassName,
           editContainerClassName = _this$props6.editContainerClassName,
           viewContainerClassName = _this$props6.viewContainerClassName,
+          modifyViewContent = _this$props6.modifyViewContent,
           cancelButtonContent = _this$props6.cancelButtonContent,
           onValidationFail = _this$props6.onValidationFail,
           validationMessage = _this$props6.validationMessage,

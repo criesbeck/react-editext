@@ -187,7 +187,7 @@ export default class EdiText extends Component {
       saveButtonContent,
       cancelButtonClassName,
       editContainerClassName,
-ad      viewContainerClassName,
+      viewContainerClassName,
       cancelButtonContent,
       onValidationFail,
       validationMessage,

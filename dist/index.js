@@ -422,7 +422,7 @@ var EdiText = /*#__PURE__*/function (_Component) {
         onFocus: _this.handleViewFocus,
         onClick: viewClickHandler,
         editext: "view"
-      }), _this.state.value), /*#__PURE__*/React__default.createElement("div", {
+      }), modifyViewContent(_this.state.value)), /*#__PURE__*/React__default.createElement("div", {
         className: buttonsContainerClass
       }, /*#__PURE__*/React__default.createElement("button", {
         type: "button",
@@ -561,6 +561,9 @@ EdiText.defaultProps = {
     onKeyDown: function onKeyDown(_e) {},
     onFocus: function onFocus(_e) {}
   },
+  modifyViewContent: function modifyViewContent(text) {
+    return text;
+  },
   cancelButtonContent: '',
   saveButtonContent: '',
   editButtonContent: '',
@@ -571,6 +574,7 @@ EdiText.defaultProps = {
 EdiText.propTypes = {
   inputProps: PropTypes.object,
   viewProps: PropTypes.object,
+  modifyViewContent: PropTypes.func,
   value: PropTypes.string.isRequired,
   hint: PropTypes.node,
   validationMessage: PropTypes.node,

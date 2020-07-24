@@ -309,7 +309,7 @@ export default class EdiText extends Component {
             onClick={viewClickHandler}
             editext='view'
           >
-            {this.state.value}
+            {modifyViewContent(this.state.value)}
           </div>
         )}
         <div className={buttonsContainerClass}>
@@ -363,6 +363,7 @@ EdiText.defaultProps = {
   onCancel: _v => null,
   inputProps: { onKeyDown: _e => {}, onBlur: _e => {}, onFocus: _e => {} },
   viewProps: { onKeyDown: _e => {}, onFocus: _e => {} },
+  modifyViewContent: text => text,
   cancelButtonContent: '',
   saveButtonContent: '',
   editButtonContent: '',
@@ -374,6 +375,7 @@ EdiText.defaultProps = {
 EdiText.propTypes = {
   inputProps: PropTypes.object,
   viewProps: PropTypes.object,
+  modifyViewContent: PropTypes.func,
   value: PropTypes.string.isRequired,
   hint: PropTypes.node,
   validationMessage: PropTypes.node,

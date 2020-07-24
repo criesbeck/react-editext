@@ -28,8 +28,8 @@
     "test:watch": "react-scripts test",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "prepare": "yarn run build",
-    "predeploy": "cd example && yarn install && yarn run build && cp _redirects build/ ",
+    "prepare": "npm run build",
+    "predeploy": "cd example && npm install && npm run build && cp _redirects build/ ",
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {

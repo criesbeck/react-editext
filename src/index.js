@@ -187,8 +187,7 @@ export default class EdiText extends Component {
       saveButtonContent,
       cancelButtonClassName,
       editContainerClassName,
-      viewContainerClassName,
-      modifyViewContent,
+ad      viewContainerClassName,
       cancelButtonContent,
       onValidationFail,
       validationMessage,
@@ -266,6 +265,7 @@ export default class EdiText extends Component {
   _renderViewMode = () => {
     const {
       viewProps,
+      modifyViewContent,
       editButtonClassName,
       editButtonContent,
       viewContainerClassName,
